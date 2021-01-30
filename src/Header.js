@@ -7,7 +7,7 @@ function Header() {
         <div>
             <Navbar bg="light" variant="light">
                 <Navbar.Brand href="">
-                    <img src='https://www.shabdalaya.com/images/main-logo.png',  alt="Shabdalaya"></img>
+                    <img src='https://www.shabdalaya.com/images/main-logo.png'  alt="Shabdalaya"></img>
                 </Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="#home" className="header__option">Home</Nav.Link>
