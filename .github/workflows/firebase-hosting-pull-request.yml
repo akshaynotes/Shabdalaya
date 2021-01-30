@@ -16,5 +16,6 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SHABDALAYA_99637 }}'
           projectId: shabdalaya-99637
         env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels
           CI: ""
+          FIREBASE_CLI_PREVIEWS: hostingchannels
+
