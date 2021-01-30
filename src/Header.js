@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, NavDropdown } from 'react-bootstrap';
 import './Header.css'
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
         <div>
             <Navbar bg="light" variant="light">
                 <Navbar.Brand href="">
-                    <img src='https://www.shabdalaya.com/images/main-logo.png'></img>
+                    <img src='https://www.shabdalaya.com/images/main-logo.png',  alt="Shabdalaya"></img>
                 </Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="#home" className="header__option">Home</Nav.Link>
