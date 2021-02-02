@@ -11,7 +11,6 @@ function Carousal() {
         
             <Carousel.Item>
                 <CarousalItem imgUrl="https://www.shabdalaya.com/uploads/home_banner/website-flyer.jpg" content="रंगनाथ पठारे लिखित सातपाटील कुलवृत्तान्त" />
-                paresh patel
             </Carousel.Item>
         </Carousel>
     );
