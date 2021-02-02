@@ -1,0 +1,47 @@
+.carousal__item {
+    margin-top: 10px;
+    border-color: coral;
+    border-width: thin;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d3f3fa;
+    border-radius: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carousal__content {
+    font-size: 200%;
+    max-width: 300px;
+}
+
+.carousal__button {
+    background-color: #0b396d;
+    padding: 0.75rem 3rem;
+    border-radius: 1rem;
+    border-color: transparent;
+    font-weight: 50;
+    color: #fff;
+    margin: 0;
+}
+
+.carousal__button:hover {
+    background-color: #161619;
+}
+
+
+.carousal__image{
+    height: 400px;
+    width: 500px;
+    padding: 20px 20px 20px 20px;
+}
+
+.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
