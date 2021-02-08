@@ -6,7 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import { red } from '@material-ui/core/colors';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import { Box } from '@material-ui/core';
 
@@ -51,11 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 function BookCard() {
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
   
-    const handleExpandClick = () => {
-      setExpanded(!expanded);
-    };
     return (
         <Card className={classes.root}>
       <Box m={1}>
