@@ -4,7 +4,7 @@ import CarousalItem from './CarousalItem';
 
 function Carousal() {
     return (
-        <Carousel>
+        <Carousel> 
             <Carousel.Item>
                 <CarousalItem imgUrl="https://www.shabdalaya.com/uploads/home_banner/shabdalaya-advt-1.jpg" content="विश्व मराठी संमेलनानिमित्त ४०% पर्यन्त सवलत." />
             </Carousel.Item>

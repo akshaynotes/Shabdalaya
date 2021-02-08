@@ -1,0 +1,33 @@
+.root {
+    max-width: 345px;
+    max-height: 500px;
+}
+.star {
+      margin-bottom: 12px;
+}
+.media {
+    padding-top: 100%;
+}
+.price {
+    display: flex;
+}
+.price > p {
+    margin-bottom: 6px;
+}
+.metadata {
+    margin-top: 10px;
+      margin-left: 20px;
+      
+}
+.stargap {
+      padding: 0
+}
+.book__title {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.offer__tag > p {
+    background-color: red;
+    margin-bottom: 0px;
+}
