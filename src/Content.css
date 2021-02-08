@@ -1,0 +1,11 @@
+.books__type {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.border__bottom {
+    margin-top: 25px;
+    border-bottom: 2px dotted gray;
+}
