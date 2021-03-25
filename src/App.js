@@ -1,17 +1,24 @@
-import './App.css';
-import Header from './Header';
-import Carousal from './Carousal';
-import Body from './Body';
-// Shabdalaya apk coming soon !! 
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
+import { Route, Switch } from "react-router-dom";
+import Main from "./Main";
+import Error from "./Error";
+// Shabdalaya apk coming soon !!
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Carousal/>
-      <Body />
-      {/* <TempComp /> */}
-    </div>
+    <Switch>
+      <Route path="/" exact>
+        <Main />
+      </Route>
+      <Route path="/signin">
+        <SignIn />
+      </Route>
+      <Route path="/signup">
+        <SignUp />
+      </Route>
+      <Route component={Error} />
+    </Switch>
   );
 }
 
