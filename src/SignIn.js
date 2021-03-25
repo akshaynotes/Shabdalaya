@@ -8,7 +8,6 @@ import {
   Grid,
   IconButton,
   InputAdornment,
-  Link,
   Paper,
   TextField,
   Typography,
@@ -16,7 +15,9 @@ import {
 import React from "react";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { makeStyles } from "@material-ui/core/styles";
-import { Visibility, VisibilityOff } from "@material-ui/icons";
+import { Image, Visibility, VisibilityOff } from "@material-ui/icons";
+import { Link } from "react-router-dom";
+import Header from "./Header";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -26,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(8),
   },
   avatar: {
-    marginTop: theme.spacing(5),
-    backgroundColor: theme.palette.secondary.main,
+    marginTop: theme.spacing(3),
+    backgroundColor: theme.palette.primary.main,
   },
   form: {
     marginTop: theme.spacing(1),
@@ -57,6 +58,12 @@ function SignIn() {
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <div className={classes.paper}>
+            <Link to="/">
+              <img
+                src="https://www.shabdalaya.com/images/main-logo.png"
+                alt="Shabdalaya"
+              ></img>
+            </Link>
             <Avatar className={classes.avatar}>
               <LockOutlinedIcon />
             </Avatar>
@@ -93,7 +100,7 @@ function SignIn() {
               />
               {/* getting value of the checkbox in the backend */}
               <FormControlLabel
-                control={<Checkbox color="secondary"></Checkbox>}
+                control={<Checkbox color="primary"></Checkbox>}
                 label="Remember me"
               />
               {/* helperText and error */}
@@ -102,21 +109,17 @@ function SignIn() {
                 type="submit"
                 variant="contained"
                 fullWidth
-                color="secondary"
+                color="primary"
               >
                 Sign In
               </Button>
             </form>
             <Grid className={classes.grid} container>
               <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
+                <Link to="/forgotpass">Forgot password?</Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
-                  Don't have an account? Sign Up
-                </Link>
+                <Link to="/signup">Don't have an account? Sign Up</Link>
               </Grid>
             </Grid>
           </div>

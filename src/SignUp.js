@@ -9,7 +9,6 @@ import {
   Grid,
   IconButton,
   InputAdornment,
-  Link,
   Paper,
   TextField,
   Typography,
@@ -18,17 +17,18 @@ import React from "react";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { makeStyles } from "@material-ui/core/styles";
 import { Visibility, VisibilityOff } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1),
   },
   avatar: {
-    marginTop: theme.spacing(5),
-    backgroundColor: theme.palette.secondary.main,
+    marginTop: theme.spacing(2),
+    backgroundColor: theme.palette.primary.main,
   },
   form: {
     marginTop: theme.spacing(1),
@@ -46,11 +46,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SignUp() {
-
-    //TODO
-    // 1. ROUTING
-    // 2. FORM FUNCTIONALITY FOR BACKEND
-    // 3. BACKEND APIS FOR SIGN UP AND SIGN IN WITH DATABASE AND SECURITY
+  //TODO
+  // 1. ROUTING
+  // 2. FORM FUNCTIONALITY FOR BACKEND
+  // 3. BACKEND APIS FOR SIGN UP AND SIGN IN WITH DATABASE AND SECURITY
 
   const classes = useStyles();
   const [showPassword, setShowPassword] = React.useState(false);
@@ -64,6 +63,12 @@ function SignUp() {
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <div className={classes.paper}>
+            <Link to="/">
+              <img
+                src="https://www.shabdalaya.com/images/main-logo.png"
+                alt="Shabdalaya"
+              ></img>
+            </Link>
             <Avatar className={classes.avatar}>
               <LockOutlinedIcon />
             </Avatar>
@@ -115,10 +120,9 @@ function SignUp() {
                 label="Password"
               />
               {/* getting value of the checkbox in the backend */}
-              
-              
+
               <FormControlLabel
-                control={<Checkbox color="secondary"></Checkbox>}
+                control={<Checkbox color="primary"></Checkbox>}
                 label={["Accept ", <Link>Terms and Condition</Link>]}
               />
               {/* helperText and error */}
@@ -127,16 +131,14 @@ function SignUp() {
                 type="submit"
                 variant="contained"
                 fullWidth
-                color="secondary"
+                color="primary"
               >
                 Sign Up
               </Button>
             </form>
             <Grid className={classes.grid} justify="flex-end" container>
               <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign In
-                </Link>
+                <Link to="/signin">Already have an account? Sign In</Link>
               </Grid>
             </Grid>
           </div>
