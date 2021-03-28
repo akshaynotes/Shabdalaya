@@ -1,4 +1,4 @@
-import { Container, CssBaseline, Divider, Typography } from "@material-ui/core";
+import { Container, CssBaseline, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import React from "react";
 import Header from "./Header";

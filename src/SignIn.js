@@ -15,9 +15,8 @@ import {
 import React from "react";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { makeStyles } from "@material-ui/core/styles";
-import { Image, Visibility, VisibilityOff } from "@material-ui/icons";
+import { Visibility, VisibilityOff } from "@material-ui/icons";
 import { Link } from "react-router-dom";
-import Header from "./Header";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

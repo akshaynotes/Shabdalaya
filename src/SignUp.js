@@ -5,7 +5,6 @@ import {
   Container,
   CssBaseline,
   FormControlLabel,
-  FormGroup,
   Grid,
   IconButton,
   InputAdornment,
