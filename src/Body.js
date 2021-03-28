@@ -1,6 +1,6 @@
 import { Grid } from '@material-ui/core'
 import React from 'react'
-import Content from './Content'
+import Content from './components/Content'
 
 function Body() {
     return (
