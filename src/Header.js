@@ -34,7 +34,6 @@ function Header() {
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul> */}
             </Navbar>
-            <p>Yes Boss !!</p>
         </div>
     )
 }
